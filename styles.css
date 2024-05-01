@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Waldfriedhof für Tiere</title>
     <style>
-        /* Basis-Styles */
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
@@ -13,16 +12,14 @@
             padding: 0;
         }
 
-        /* Header-Stil */
         .header-title {
-            background-color: green;
+            background-color: green; /* Grün hinterlegt */
             color: white;
             padding: 10px 20px;
             text-align: center;
             font-size: 24px;
         }
 
-        /* Navigation */
         nav ul {
             list-style-type: none;
             padding: 0;
@@ -48,30 +45,27 @@
             background: #bbb;
         }
 
-        /* Haupt-Inhaltsbereich */
         .content-section {
+            display: flex; /* Flexbox für Nebeneinander-Anordnung */
             padding: 20px;
-            margin: 10px;
+            align-items: center; /* Vertikale Zentrierung der Inhalte */
         }
 
         .hero-image {
-            background: url('Home.jpg') no-repeat;
-            height: 300px;
             width: 300px;
-            float: left;
+            height: auto;
             margin-right: 20px;
         }
 
         .intro-text {
-            overflow: hidden; /* Umbricht den Float */
+            flex-grow: 1; /* Lässt den Textbereich den verfügbaren Platz ausfüllen */
         }
 
-        /* Leistungen-Spalten */
         .column {
             float: left;
             width: 33%;
             padding: 0 10px;
-            box-sizing: border-box; /* Stellt sicher, dass padding und border im width inbegriffen sind */
+            box-sizing: border-box;
         }
 
         .column h2 {
@@ -84,7 +78,7 @@
             text-align: center;
             padding: 10px;
             background-color: #ddd;
-            margin-top: 20px;
+            margin-top: 20px; /* Mehr Abstand zur Fußzeile */
         }
     </style>
 </head>
@@ -104,17 +98,26 @@
     </header>
 
     <div id="home" class="content-section" style="display:block;">
-        <div class="hero-image"></div>
+        <img src="Home.jpg" alt="Home" class="hero-image">
         <div class="intro-text">
             <h2>DAS HAUSTIER IST FÜR VIELE MENSCHEN GLEICHERMASSEN FREUND WIE VERTRAUTER.</h2>
-            <p>Nicht wenige haben ihr Haustier als Familienmitglied integriert. Abschied nehmen zu müssen...</p>
+            <p>Nicht wenige haben ihr Haustier als Familienmitglied integriert...</p>
         </div>
     </div>
-    <!-- Weitere Abschnitte hier entsprechend formatiert -->
+    <!-- Weitere Abschnitte entsprechend formatiert -->
 
     <footer>
         <p>© 2024 Waldfriedhof für Tiere. Alle Rechte vorbehalten.</p>
     </footer>
+
+    <script>
+        function showSection(sectionId) {
+            var sections = document.getElementsByClassName('content-section');
+            for (var i = 0; i < sections.length; i++) {
+                sections[i].style.display = 'none';
+            }
+            document.getElementById(sectionId).style
+
 
     <script>
         function showSection(sectionId) {
