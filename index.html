@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tierfriedhof</title>
+    <title>Waldfriedhof für Tiere</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -11,47 +11,48 @@
         <h1>Waldfriedhof für Tiere</h1>
         <nav>
             <ul>
-                <li><a href="#home">Startseite</a></li>
+                <li><a href="#home">Home</a></li>
                 <li><a href="#about">Über uns</a></li>
+                <li><a href="#services">Leistungen</a></li>
+                <li><a href="#gallery">Galerie</a></li>
                 <li><a href="#contact">Kontakt</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="home">
-        <h2>Willkommen auf dem Waldfriedhof für Tiere</h2>
-        <p>Hier finden Sie Ruhe und einen würdigen Abschied für Ihr geliebtes Haustier.</p>
-    </section>
-
-    <section id="about">
-        <h2>Über uns</h2>
-        <p>Unser Tierfriedhof bietet seit über 20 Jahren einen liebevollen Ort für die letzte Ruhestätte Ihrer tierischen Begleiter.</p>
-    </section>
-
-    <section id="contact">
-        <h2>Kontakt</h2>
-        <form action="submit_form.php" method="POST">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">E-Mail:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Nachricht:</label>
-            <textarea id="message" name="message" required></textarea>
-
-            <button type="submit">Senden</button>
-        </form>
-    </section>
+    <main>
+        <section id="services">
+            <div class="column">
+                <h2>Bestattung</h2>
+                <p>1) Kleintiere und Urnen - 70,00 €</p>
+                <p>2) Katzen + Hasen - 125,00 €</p>
+                <p>3) Hunde + große Katzen bis 10 kg - 165,00 €</p>
+                <p>4) Hunde 11–15 kg - 185,00 €</p>
+                <p>5) Hunde 16–25 kg - 210,00 €</p>
+                <p>6) Hunde 26–35 kg - 240,00 €</p>
+                <p>7) Hunde 36–45 kg - 285,00 €</p>
+                <p>8) Hunde > 45 kg - 345,00 €</p>
+            </div>
+            <div class="column">
+                <h2>Grabpflege / Jahr</h2>
+                <p>Kleine Grabstelle - 20,00 €</p>
+                <p>Mittlere Grabstelle - 50,00 €</p>
+                <p>Große Grabstelle - 75,00 €</p>
+            </div>
+            <div class="column">
+                <h2>Extras</h2>
+                <p>Pachtverlängerung nach 3 Jahren</p>
+                <p>Kleine Grabstelle - 10,00 € / Jahr</p>
+                <p>Mittlere Grabstelle - 15,00 € / Jahr</p>
+                <p>Große Grabstelle - 20,00 € / Jahr</p>
+                <p>Abholung - Pauschale 15,00 €</p>
+                <p>zzgl. 0,55 € je gefahrenen Kilometer</p>
+            </div>
+        </section>
+    </main>
 
     <footer>
         <p>© 2024 Waldfriedhof für Tiere. Alle Rechte vorbehalten.</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
-
-</body>
-</html>
-
