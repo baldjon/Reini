@@ -1,72 +1,123 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waldfriedhof für Tiere</title>
+    <style>
+        /* Basis-Styles */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
 
-header nav ul {
-    list-style-type: none;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    text-align: center;
-}
+        /* Header-Stil */
+        .header-title {
+            background-color: green;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 24px;
+        }
 
-header nav ul li {
-    display: inline-block;
-}
+        /* Navigation */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+            background-color: #ddd;
+            margin: 0;
+        }
 
-header nav ul li a {
-    display: block;
-    color: white;
-    padding: 20px;
-    text-decoration: none;
-}
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
 
-.header nav ul li a:hover {
-    background-color: #ddd;
-    color: black;
-}
+        nav ul li a {
+            text-decoration: none;
+            font-size: 18px;
+            color: black;
+            padding: 5px 10px;
+            background: #ccc;
+        }
 
-.hero-image {
-    background-image: url('path/to/your-image.jpg'); /* Pfad zum Hintergrundbild anpassen */
-    height: 400px;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-}
+        nav ul li a:hover {
+            background: #bbb;
+        }
 
-.hero-image h1 {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    color: white;
-    font-size: 48px;
-}
+        /* Haupt-Inhaltsbereich */
+        .content-section {
+            padding: 20px;
+            margin: 10px;
+        }
 
-.intro-text h2 {
-    font-size: 24px;
-    color: #333;
-}
+        .hero-image {
+            background: url('Home.jpg') no-repeat;
+            height: 300px;
+            width: 300px;
+            float: left;
+            margin-right: 20px;
+        }
 
-.intro-text p {
-    font-size: 18px;
-    color: #666;
-}
+        .intro-text {
+            overflow: hidden; /* Umbricht den Float */
+        }
 
-.image-group img {
-    width: 150px;
-    padding: 10px;
-}
+        /* Leistungen-Spalten */
+        .column {
+            float: left;
+            width: 33%;
+            padding: 0 10px;
+            box-sizing: border-box; /* Stellt sicher, dass padding und border im width inbegriffen sind */
+        }
 
-footer {
-    text-align: center;
-    padding:
+        .column h2 {
+            background-color: green;
+            color: white;
+            padding: 5px;
+        }
 
-.content-section {
-    padding: 20px;
-    margin: 10px;
-    background-color: white;
-    border: 1px solid #ddd;
-}
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #ddd;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-title">Waldfriedhof für Tiere</div>
+        <nav>
+            <ul>
+                <li><a href="#home" onclick="showSection('home')">Home</a></li>
+                <li><a href="#ueber-uns" onclick="showSection('ueber-uns')">Über uns</a></li>
+                <li><a href="#leistungen" onclick="showSection('leistungen')">Leistungen</a></li>
+                <li><a href="#galerie" onclick="showSection('galerie')">Galerie</a></li>
+                <li><a href="#kontakt" onclick="showSection('kontakt')">Kontakt</a></li>
+                <li><a href="#garten" onclick="showSection('garten')">Garten Zeisshof</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="home" class="content-section" style="display:block;">
+        <div class="hero-image"></div>
+        <div class="intro-text">
+            <h2>DAS HAUSTIER IST FÜR VIELE MENSCHEN GLEICHERMASSEN FREUND WIE VERTRAUTER.</h2>
+            <p>Nicht wenige haben ihr Haustier als Familienmitglied integriert. Abschied nehmen zu müssen...</p>
+        </div>
+    </div>
+    <!-- Weitere Abschnitte hier entsprechend formatiert -->
+
+    <footer>
+        <p>© 2024 Waldfriedhof für Tiere. Alle Rechte vorbehalten.</p>
+    </footer>
+
+    <script>
+        function showSection(sectionId) {
+            var sections = document.getElementsByClassName('content-section');
+            for
+
