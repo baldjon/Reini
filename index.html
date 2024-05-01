@@ -3,22 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dating Profil</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Tierfriedhof</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="profil-container">
-        <img src="Profilbild.jpg" alt="Profilbild" class="profilbild">
-        <h1>Jesus (Reinhard Feurstein)</h1>
-        <p>Zeawas, ich bins Jesus. Ich bin grundsätzlich auf jedem Fest anzutreffen. In meiner Freizeit gehe ich gerne wandern und bin auf der Skipiste mehr in den Lüften als am Boden zu finden. An Stelle nummer 1 steht bei mir immer der Subaru, gleich danach kommst du! Habe immer einen Spruch auf lager ;-) und wenn du RadioV Hörerin bist denn fehlt nur noch der Bauplatz und der Ring oder Ohrringe sind schon fast da! </p>
-        <div class="kontakt">
-            <p>Kontaktiere mich über:</p>
+    <header>
+        <h1>Waldfriedhof für Tiere</h1>
+        <nav>
             <ul>
-                <li>Email: reini.feurstein@hotmail.com</li>
-                <li>Tinder: @reinifeurstein</li>
+                <li><a href="#home">Startseite</a></li>
+                <li><a href="#about">Über uns</a></li>
+                <li><a href="#contact">Kontakt</a></li>
             </ul>
-        </div>
-    </div>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Willkommen auf dem Waldfriedhof für Tiere</h2>
+        <p>Hier finden Sie Ruhe und einen würdigen Abschied für Ihr geliebtes Haustier.</p>
+    </section>
+
+    <section id="about">
+        <h2>Über uns</h2>
+        <p>Unser Tierfriedhof bietet seit über 20 Jahren einen liebevollen Ort für die letzte Ruhestätte Ihrer tierischen Begleiter.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Kontakt</h2>
+        <form action="submit_form.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-Mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Nachricht:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Senden</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2024 Waldfriedhof für Tiere. Alle Rechte vorbehalten.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
 </body>
 </html>
 
