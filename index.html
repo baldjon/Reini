@@ -41,29 +41,29 @@
         <p>Details zu den Bestattungsoptionen und weiteren Services, die wir anbieten.</p>
         <div class="column">
             <h2>Bestattung</h2>
-                <p>1) Kleintiere und Urnen - 70,00 €</p>
-                <p>2) Katzen + Hasen - 125,00 €</p>
-                <p>3) Hunde + große Katzen bis 10 kg - 165,00 €</p>
-                <p>4) Hunde 11–15 kg - 185,00 €</p>
-                <p>5) Hunde 16–25 kg - 210,00 €</p>
-                <p>6) Hunde 26–35 kg - 240,00 €</p>
-                <p>7) Hunde 36–45 kg - 285,00 €</p>
-                <p>8) Hunde > 45 kg - 345,00 €</p>
+            <p>1) Kleintiere und Urnen - 70,00 €</p>
+            <p>2) Katzen + Hasen - 125,00 €</p>
+            <p>3) Hunde + große Katzen bis 10 kg - 165,00 €</p>
+            <p>4) Hunde 11–15 kg - 185,00 €</p>
+            <p>5) Hunde 16–25 kg - 210,00 €</p>
+            <p>6) Hunde 26–35 kg - 240,00 €</p>
+            <p>7) Hunde 36–45 kg - 285,00 €</p>
+            <p>8) Hunde > 45 kg - 345,00 €</p>
         </div>
         <div class="column">
             <h2>Grabpflege / Jahr</h2>
-                <p>Kleine Grabstelle - 20,00 €</p>
-                <p>Mittlere Grabstelle - 50,00 €</p>
-                <p>Große Grabstelle - 75,00 €</p>
+            <p>Kleine Grabstelle - 20,00 €</p>
+            <p>Mittlere Grabstelle - 50,00 €</p>
+            <p>Große Grabstelle - 75,00 €</p>
         </div>
         <div class="column">
             <h2>Extras</h2>
-                <p>Pachtverlängerung nach 3 Jahren</p>
-                <p>Kleine Grabstelle - 10,00 € / Jahr</p>
-                <p>Mittlere Grabstelle - 15,00 € / Jahr</p>
-                <p>Große Grabstelle - 20,00 € / Jahr</p>
-                <p>Abholung - Pauschale 15,00 €</p>
-                <p>zzgl. 0,55 € je gefahrenen Kilometer</p>
+            <p>Pachtverlängerung nach 3 Jahren</p>
+            <p>Kleine Grabstelle - 10,00 € / Jahr</p>
+            <p>Mittlere Grabstelle - 15,00 € / Jahr</p>
+            <p>Große Grabstelle - 20,00 € / Jahr</p>
+            <p>Abholung - Pauschale 15,00 €</p>
+            <p>zzgl. 0,55 € je gefahrenen Kilometer</p>
         </div>
     </section>
     <section id="galerie" class="content-section" style="display:none;">
@@ -82,4 +82,16 @@
     <footer>
         <p>© 2024 Waldfriedhof für Tiere. Alle Rechte vorbehalten.</p>
     </footer>
+
+    <script>
+        function showSection(sectionId) {
+            var sections = document.getElementsByClassName('content-section');
+            for (var i = 0; i < sections.length; i++) {
+                sections[i].style.display = 'none'; // Alle Abschnitte verstecken
+            }
+            document.getElementById(sectionId).style.display = 'block'; // Den ausgewählten Abschnitt anzeigen
+        }
+    </script>
+</body>
+</html>
 
